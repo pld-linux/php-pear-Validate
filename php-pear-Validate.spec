@@ -11,7 +11,7 @@ License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	557e60dc51b8c5f3b79f17200f686831
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/Validate/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
