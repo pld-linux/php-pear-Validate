@@ -1,11 +1,12 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Validate
+%define		_status		alpha
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
-Version:	0.0.3
-Release:	2
+Version:	0.0.4
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -27,6 +28,8 @@ Package to validate various datas. It includes :
  - possibility valid multiple data with a single method call
    (::multiple).
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Pakiet do sprawdzania poprawno¶ci ró¿nych danych:
  - liczby (min/max, dziesiêtne czy nie),
@@ -37,6 +40,8 @@ Pakiet do sprawdzania poprawno¶ci ró¿nych danych:
  - karty kredytowe,
  - mo¿liwe sprawdzenie wiêkszej ilo¶ci danych wywo³aniem pojedynczej
    metody (::multiple).
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
