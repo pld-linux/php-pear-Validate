@@ -2,15 +2,16 @@
 %define		_class		Validate
 %define		_status		alpha
 %define		_pearname	%{_class}
+
 Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
-Version:	0.2.0
+Version:	0.3.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	557e60dc51b8c5f3b79f17200f686831
+# Source0-md5:	d9e8504736347be0efaaff898315a62d
 URL:		http://pear.php.net/package/Validate/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -47,10 +48,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Finance
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/
 install %{_pearname}-%{version}/%{_class}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install %{_pearname}-%{version}/%{_class}/Finance/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Finance
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,5 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/{tests,docs/*}
+%dir %{php_pear_dir}/%{_class}/Finance
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/Finance/*.php
