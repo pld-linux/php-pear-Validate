@@ -28,7 +28,7 @@ Package to validate various datas. It includes :
  - possibility valid multiple data with a single method call
    (::multiple).
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Pakiet do sprawdzania poprawno¶ci ró¿nych danych:
