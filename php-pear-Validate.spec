@@ -5,7 +5,7 @@
 Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
-Version:	0.0.4
+Version:	0.1.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -15,8 +15,6 @@ BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	'pear(FR_insee_country_codes.php)'
 
 %description
 Package to validate various datas. It includes :
@@ -58,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/tests/*
+%doc %{_pearname}-%{version}/{tests,docs/*}
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
