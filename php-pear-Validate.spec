@@ -20,26 +20,26 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Package to validate various datas. It includes :
- - numbers (min/max, decimal or not),
- - email (syntax, domain check),
- - string (predifined type alpha upper and/or lowercase, numeric,...),
- - date (min, max),
- - Credit cards,
- - possibility valid multiple data with a single method call
-   (::multiple).
+- numbers (min/max, decimal or not),
+- email (syntax, domain check),
+- string (predifined type alpha upper and/or lowercase, numeric,...),
+- date (min, max),
+- Credit cards,
+- possibility valid multiple data with a single method call
+  (::multiple).
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Pakiet do sprawdzania poprawno¶ci ró¿nych danych:
- - liczby (min/max, dziesiêtne czy nie),
- - email (sk³adnia, sprawdzanie domeny),
- - stringi (predefiniowane typy alfanumeryczne z du¿ymi i ma³ymi
-   literami, numeryczne,...),
- - daty (min, max),
- - karty kredytowe,
- - mo¿liwe sprawdzenie wiêkszej ilo¶ci danych wywo³aniem pojedynczej
-   metody (::multiple).
+- liczby (min/max, dziesiêtne czy nie),
+- email (sk³adnia, sprawdzanie domeny),
+- stringi (predefiniowane typy alfanumeryczne z du¿ymi i ma³ymi
+  literami, numeryczne,...),
+- daty (min, max),
+- karty kredytowe,
+- mo¿liwe sprawdzenie wiêkszej ilo¶ci danych wywo³aniem pojedynczej
+  metody (::multiple).
 
 Ta klasa ma w PEAR status: %{_status}.
 
