@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
-Version:	0.1.2
+Version:	0.2.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
-# Source0-md5:	5aedb034f72eb410e2e0c037dfabfe74
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	557e60dc51b8c5f3b79f17200f686831
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
