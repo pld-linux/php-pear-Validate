@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
 Version:	0.4.1
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,6 +17,9 @@ BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# It's in a comment block
+%define		_noautoreq	'pear(FR_insee_country_codes.php)'
 
 %description
 Package to validate various datas. It includes :
