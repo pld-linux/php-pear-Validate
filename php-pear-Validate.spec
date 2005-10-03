@@ -10,13 +10,14 @@ Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
 Version:	0.4.1
-Release:	3.1
+Release:	3.2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	6203c4285dc8ff0736b823fa6e991de4
 URL:		http://pear.php.net/package/Validate/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.1.0
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
