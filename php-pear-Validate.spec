@@ -1,3 +1,6 @@
+# TODO
+# - conflicts with php-pear-Validate_Finance.
+#   remove Finance portion from here? obsolete Validate_Finance?
 %include	/usr/lib/rpm/macros.php
 %define		_class		Validate
 %define		_status		alpha
