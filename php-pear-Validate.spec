@@ -1,23 +1,20 @@
-# TODO
-# - conflicts with php-pear-Validate_Finance.
-#   Validate_Finance is split since Validate 0.5.0
 %include	/usr/lib/rpm/macros.php
 %define		_class		Validate
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
-Version:	0.4.1
-Release:	4
+Version:	0.6.1
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	6203c4285dc8ff0736b823fa6e991de4
+# Source0-md5:	fd905b8d88d9c6a2eec295766bebb636
 URL:		http://pear.php.net/package/Validate/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-common >= 3:4.1.0
+Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -78,13 +75,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %doc docs/%{_pearname}/docs/*
-%dir %{php_pear_dir}/%{_class}/Finance
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/Finance/*.php
-
-%{php_pear_dir}/data/%{_pearname}
 
 %files tests
 %defattr(644,root,root,755)
