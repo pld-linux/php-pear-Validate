@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Validation class
 Summary(pl):	%{_pearname} - klasa validuj±ca
 Name:		php-pear-%{_pearname}
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -20,7 +20,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # It's in a comment block
-%define		_noautoreq	'pear(FR_insee_country_codes.php)'
+%define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)'
 
 %description
 Package to validate various datas. It includes :
@@ -71,9 +71,14 @@ install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+if [ -f %{_docdir}/%{name}-%{version}/optional-packages.txt ]; then
+	cat %{_docdir}/%{name}-%{version}/optional-packages.txt
+fi
+
 %files
 %defattr(644,root,root,755)
-%doc install.log
+%doc install.log optional-packages.txt
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
