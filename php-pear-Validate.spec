@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Validation class
-Summary(pl):	%{_pearname} - klasa validuj±ca
+Summary(pl):	%{_pearname} - klasa sprawdzaj±ca poprawno¶æ danych
 Name:		php-pear-%{_pearname}
 Version:	0.6.1
 Release:	2
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)'
 
 %description
-Package to validate various datas. It includes :
+Package to validate various datas. It includes:
 - numbers (min/max, decimal or not),
 - email (syntax, domain check),
 - string (predifined type alpha upper and/or lowercase, numeric,...),
@@ -36,11 +36,11 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Pakiet do sprawdzania poprawno¶ci ró¿nych danych:
-- liczby (min/max, dziesiêtne czy nie),
-- email (sk³adnia, sprawdzanie domeny),
-- stringi (predefiniowane typy alfanumeryczne z du¿ymi i ma³ymi
-  literami, numeryczne,...),
-- daty (min, max),
+- liczb (minimalna/maksymalna, dziesiêtne czy nie),
+- adresy e-mail (sk³adnia, sprawdzanie domeny),
+- ³añcuchy znaków (predefiniowane typy alfanumeryczne z du¿ymi i
+  ma³ymi literami, numeryczne...),
+- daty (minimalna, maksymalna),
 - karty kredytowe,
 - mo¿liwe sprawdzenie wiêkszej ilo¶ci danych wywo³aniem pojedynczej
   metody (::multiple).
