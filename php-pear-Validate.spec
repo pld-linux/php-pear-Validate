@@ -8,6 +8,7 @@ Summary(pl):	%{_pearname} - klasa sprawdzaj±ca poprawno¶æ danych
 Name:		php-pear-%{_pearname}
 Version:	0.6.1
 Release:	2
+Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
