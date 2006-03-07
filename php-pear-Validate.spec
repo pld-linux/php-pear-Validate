@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)'
 
 %description
-Package to validate various datas. It includes:
+Package to validate various data. It includes:
 - numbers (min/max, decimal or not),
 - email (syntax, domain check),
 - string (predifined type alpha upper and/or lowercase, numeric,...),
