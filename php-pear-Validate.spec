@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Validation class
-Summary(pl.UTF-8):   %{_pearname} - klasa sprawdzająca poprawność danych
+Summary(pl.UTF-8):	%{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
 Release:	1
@@ -51,7 +51,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
