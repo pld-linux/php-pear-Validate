@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Validation class
-Summary(pl):	%{_pearname} - klasa sprawdzaj�ca poprawno�� danych
+Summary(pl.UTF-8):   %{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
 Release:	1
@@ -36,22 +36,22 @@ Package to validate various data. It includes:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet do sprawdzania poprawno�ci r�nych danych:
-- liczb (minimalna/maksymalna, dziesi�tne czy nie),
-- adresy e-mail (sk�adnia, sprawdzanie domeny),
-- �a�cuchy znak�w (predefiniowane typy alfanumeryczne z du�ymi i
-  ma�ymi literami, numeryczne...),
+%description -l pl.UTF-8
+Pakiet do sprawdzania poprawności różnych danych:
+- liczb (minimalna/maksymalna, dziesiętne czy nie),
+- adresy e-mail (składnia, sprawdzanie domeny),
+- łańcuchy znaków (predefiniowane typy alfanumeryczne z dużymi i
+  małymi literami, numeryczne...),
 - daty (minimalna, maksymalna),
 - karty kredytowe,
-- mo�liwe sprawdzenie wi�kszej ilo�ci danych wywo�aniem pojedynczej
+- możliwe sprawdzenie większej ilości danych wywołaniem pojedynczej
   metody (::multiple).
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -60,7 +60,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
