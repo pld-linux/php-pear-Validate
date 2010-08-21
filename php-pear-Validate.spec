@@ -2,12 +2,11 @@
 %define		_class		Validate
 %define		_status		beta
 %define		_pearname	%{_class}
-
 Summary:	%{_pearname} - Validation class
 Summary(pl.UTF-8):	%{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
 Version:	0.8.3
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,11 +17,13 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
+Suggests:	php-pear-Date
+Suggests:	php-pear-Net_IDNA
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # It's in a comment block
-%define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)'
+%define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)' pear(Net/IDNA.*)
 
 %description
 Package to validate various data. It includes:
@@ -54,8 +55,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
