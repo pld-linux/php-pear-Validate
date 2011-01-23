@@ -19,6 +19,7 @@ Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Suggests:	php-pear-Date
 Suggests:	php-pear-Net_IDNA
+Obsoletes:	php-pear-Validate-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,20 +51,6 @@ Pakiet do sprawdzania poprawności różnych danych:
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -86,7 +73,3 @@ fi
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
