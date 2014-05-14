@@ -1,12 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Validate
 %define		_status		beta
-%define		_pearname	%{_class}
+%define		_pearname	Validate
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class
 Summary(pl.UTF-8):	%{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,7 +14,7 @@ URL:		http://pear.php.net/package/Validate/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Suggests:	php-pear-Date
 Suggests:	php-pear-Net_IDNA
