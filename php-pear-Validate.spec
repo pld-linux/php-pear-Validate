@@ -13,7 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Suggests:	php-pear-Date
@@ -22,8 +22,7 @@ Obsoletes:	php-pear-Validate-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-# It's in a comment block
-%define		_noautoreq	'pear(FR_insee_country_codes.php)' 'pear(Date.*)' pear(Net/IDNA.*)
+%define		_noautoreq_pear Date.* Net/IDNA.*
 
 %description
 Package to validate various data. It includes:
