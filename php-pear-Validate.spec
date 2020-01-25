@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	Validate
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class
 Summary(pl.UTF-8):	%{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
