@@ -3,12 +3,12 @@
 Summary:	%{_pearname} - Validation class
 Summary(pl.UTF-8):	%{_pearname} - klasa sprawdzająca poprawność danych
 Name:		php-pear-%{_pearname}
-Version:	0.8.5
-Release:	3
+Version:	0.8.6
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	3007fbf7debbb7c0fc20622f90096eb9
+# Source0-md5:	26e64e9ac5968cfcdf35a29325b88e3c
 URL:		http://pear.php.net/package/Validate/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
